@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/info_bg"
+    android:padding="4dp">
+    <com.littlesunsoftware.wearwheel.InfoViews.InfoElectric
+        android:id="@+id/infoElectric"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        ></com.littlesunsoftware.wearwheel.InfoViews.InfoElectric>
+
+    <com.littlesunsoftware.wearwheel.InfoViews.InfoTemperature
+        android:id="@+id/infoTemperature"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        ></com.littlesunsoftware.wearwheel.InfoViews.InfoTemperature>
+
+    <com.littlesunsoftware.wearwheel.InfoViews.InfoTimeDist
+        android:id="@+id/infoTimeDist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        ></com.littlesunsoftware.wearwheel.InfoViews.InfoTimeDist>
+</androidx.constraintlayout.widget.ConstraintLayout>

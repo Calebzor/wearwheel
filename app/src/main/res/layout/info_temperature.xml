@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<TextView
+    android:text="Temp."
+    style="@style/InfoLabel" />
+<TextView
+    android:id="@+id/txtTemperature"
+    tools:text="130°"
+    style="@style/InfoData"
+    android:text="0.0"/>
+
+<ImageView
+    android:id="@+id/imgHot"
+    android:visibility="gone"
+    tools:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="center"
+    android:tint="@color/hot"
+    tools:src="@drawable/ic_hot"/>
+
+<ImageView
+    android:visibility="gone"
+    tools:visibility="gone"
+    android:id="@+id/imgCold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="center"
+    android:tint="@color/cold"
+    tools:src="@drawable/ic_cold"/>
+</LinearLayout>

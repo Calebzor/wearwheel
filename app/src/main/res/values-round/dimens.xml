@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="arc_padding">5dp</dimen>
+
+    <dimen name="two_digit_text_size">75sp</dimen>
+    <dimen name="two_digit_text_margin_bottom">-15dp</dimen>
+    <dimen name="two_digit_height">100dp</dimen>
+
+    <dimen name="speed_label_unit_bottom_margin">0dp</dimen>
+
+    <dimen name="clock_text_size">18sp</dimen>
+
+    <dimen name="speed_arc_label_size">14sp</dimen>
+
+    <dimen name="battery_width">66dp</dimen>
+    <dimen name="battery_height">32dp</dimen>
+</resources>

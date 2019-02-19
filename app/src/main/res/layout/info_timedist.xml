@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Duration"
+        style="@style/InfoLabel" />
+    <TextView
+        android:id="@+id/txtTime"
+        tools:text="0:32:00"
+        style="@style/InfoData"
+        android:text="0:00:00"/>
+    <TextView
+        android:id="@+id/txtDistanceLabel"
+        android:text="Km"
+        android:paddingTop="4dp"
+        style="@style/InfoLabel" />
+    <TextView
+        android:id="@+id/txtDistance"
+        tools:text="12.1"
+        style="@style/InfoData"
+        android:text="0"/>
+</LinearLayout>

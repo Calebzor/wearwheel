@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArcMeter">
+        <attr name="arc_color" format="color"></attr>
+        <attr name="arc_width" format="dimension"></attr>
+        <attr name="value_color" format="color"></attr>
+
+        <attr name="tick_color" format="color"></attr>
+        <attr name="tick_width" format="dimension"></attr>
+        <attr name="tick_length" format="dimension"></attr>
+
+        <attr name="tick_label_size" format="dimension"></attr>
+        <attr name="tick_label_padding" format="dimension"></attr>
+
+        <attr name="arc_start_angle" format="integer"></attr>
+        <attr name="arc_padding" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TwoDigitDisplay">
+        <attr name="digit_color" format="color"></attr>
+        <attr name="empty_digit_color" format="color"></attr>
+        <attr name="text_size" format="dimension"></attr>
+    </declare-styleable>
+</resources>
