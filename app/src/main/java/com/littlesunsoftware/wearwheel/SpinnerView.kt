@@ -4,6 +4,8 @@ import android.animation.ValueAnimator
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.view.animation.LinearInterpolator
 import android.widget.ImageView
 import android.widget.TextView
@@ -14,6 +16,7 @@ class SpinnerView : ConstraintLayout {
     private lateinit var animator : ValueAnimator
     private lateinit var img : ImageView
     private lateinit var message : TextView
+    private lateinit var rotateAnimation: Animation
 
     constructor(context: Context) : super(context) {
         init(null, 0)
@@ -30,25 +33,18 @@ class SpinnerView : ConstraintLayout {
     private fun init(attrs: AttributeSet?, defStyle: Int) {
         LayoutInflater.from(context).inflate(R.layout.spinner_message, this, true)
         img = findViewById<ImageView>(R.id.spinner)
-        message = findViewById(R.id.txtSpinnerMessage)
 
-        animator = ValueAnimator.ofFloat(0F, 360F).apply {
-            duration = 2000
-            addUpdateListener {
-                img.rotation = it.animatedValue as Float
-            }
-            repeatMode = ValueAnimator.RESTART
-            repeatCount = ValueAnimator.INFINITE
-            interpolator = LinearInterpolator()
-        }
+        rotateAnimation = AnimationUtils.loadAnimation(context, R.anim.rotate)
+
+        message = findViewById(R.id.txtSpinnerMessage)
     }
 
     fun startSpinnning() {
-        animator.start()
+        img.startAnimation(rotateAnimation)
     }
 
     fun stopSpinning() {
-        animator.cancel()
+        img.clearAnimation()
     }
 
     fun setMessage(msg : String) {

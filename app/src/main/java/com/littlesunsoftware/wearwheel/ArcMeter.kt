@@ -94,9 +94,8 @@ class ArcMeter(context: Context, attributeSet: AttributeSet) : ImageView(context
             super.onDraw(canvas)
 
             canvas?.drawBitmap(this.background, 0F, 0F, paint)
+            drawValueArc(canvas!!)
         }
-
-        drawValueArc(canvas!!)
     }
 
     private fun drawValueArc(canvas: Canvas) {

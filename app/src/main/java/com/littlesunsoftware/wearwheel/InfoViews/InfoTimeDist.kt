@@ -69,12 +69,10 @@ class InfoTimeDist : LinearLayout {
             val hms = String.format("%01d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
                     TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)))
             txtTime.text = hms
-            txtTime.invalidate()
         })
 
         EventHub.instance.addListener(EventListener("infoviewdistance", EventType.Distance) {
             txtDist.text = "%.1f".format(it.getFloat("distance"))
-            txtDist.invalidate()
         })
     }
 

@@ -71,7 +71,6 @@ class InfoElectric : LinearLayout {
 
         EventHub.instance.addListener(EventListener("infoviewvolts", EventType.Volts) {
             txtVolts.text = it.getFloat("volts").roundToInt().toString()
-            txtVolts.invalidate()
         })
 
         EventHub.instance.addListener(EventListener("infoviewregen", EventType.Regen) {

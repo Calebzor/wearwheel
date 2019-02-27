@@ -96,10 +96,10 @@ class PrimaryView : LinearLayout {
         }
     }
 
-    fun refresh() {
-        invalidate()
-        requestLayout()
-    }
+//    fun refresh() {
+//        invalidate()
+//        //requestLayout()
+//    }
 
     fun setMaxSpeed(maxSpeedLocalUnits : Float) {
         speedArcMeter.maxValue = maxSpeedLocalUnits.roundToInt()

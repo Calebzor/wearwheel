@@ -275,7 +275,7 @@ class SpeedometerActivity : WearableActivity() {
         mPrimaryView!!.setDuration(now.time - startTime!!)
         mPrimaryView!!.setDistance(mKingsongData.distance)
 
-        mPrimaryView!!.refresh()
+        //mPrimaryView!!.refresh()
     }
 
     companion object {
